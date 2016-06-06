@@ -1,0 +1,16 @@
+{
+  "actionable": true, 
+  "help": "https://github.com/weirdpattern/alfred-private-browsing-workflow", 
+  "update": {
+    "enabled": true, 
+    "frequency": 7, 
+    "include-prereleases": false, 
+    "repository": {
+      "github": {
+        "repository": "alfred-private-browsing-workflow", 
+        "username": "weirdpattern"
+      }
+    }
+  }, 
+  "version": "1.0.0"
+}
