@@ -5,6 +5,8 @@ from library import Workflow
 
 
 def main(workflow):
+    args = workflow.args
+    
     browsers = {
         'Safari': ['/Applications/Safari.app', 'safari:Safari', 'resources/safari.png'],
         'Opera': ['/Applications/Opera.app', 'opera:Opera', 'resources/opera.png'],
