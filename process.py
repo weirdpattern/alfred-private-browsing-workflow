@@ -6,7 +6,7 @@ from library import Workflow
 
 
 def main(workflow):
-    browser = parse_data(workflow.args[0])
+    browser = parse_data(' '.join(workflow.args))
     if browser['name'] == 'safari':
         running = subprocess.Popen(['pgrep', '-x', 'Safari'], stdout=subprocess.PIPE).communicate()[0]
         if running:
