@@ -32,4 +32,21 @@ def customize(item, arg, icon):
     return item
 
 if __name__ == '__main__':
-    sys.exit(Workflow.run(main, Workflow()))
+    
+    defaults = {
+        'actionable': True,
+        'help': 'https://github.com/weirdpattern/alfred-private-browsing-workflow',
+        'update': {
+            'enabled': True,
+            'frequency': 7,
+            'include-prereleases': False,
+            'repository': {
+                'github': {
+                    'repository': 'alfred-private-browsing-workflow',
+                    'username': 'weirdpattern'
+                }
+            }
+        }
+    }
+
+    sys.exit(Workflow.run(main, Workflow(defaults)))
